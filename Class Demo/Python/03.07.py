@@ -1,4 +1,4 @@
-# list_group.py
+## List Group Members
 
 def list_group_members(group_name):
     try:
@@ -12,9 +12,9 @@ def list_group_members(group_name):
                     return
         print("Group '{}' not found.".format(group_name))
     except FileNotFoundError:
-        print("The file '/etc/group' does not exist.")
+        print("Error: '/etc/group' file not found.")
     except Exception as e:
         print("An error occurred: {}".format(e))
 
-if __name__ == "__main__":
-    list_group_members('team')
+# Example usage
+list_group_members('team')
